@@ -22,23 +22,31 @@ function Payment(){
 
     switch(role){
         case "Júnior":
-        payment = payment * 1
-        document.getElementById("resultadoPayment").innerHTML = `Seu cargo é ${role}. O salário correspondente é de R$${payment},00`
+            document.getElementById("resultadoPayment").innerHTML = `Seu cargo é ${role}. O salário correspondente é de R$${payment}`
+        break;
 
         case "Pleno":
-        payment = payment * 2
-        document.getElementById("resultadoPayment").innerHTML = `Seu cargo é ${role}. O salário correspondente é de R$${payment},00`
+            payment = payment * 2
+            document.getElementById("resultadoPayment").innerHTML = `Seu cargo é ${role}. O salário correspondente é de R$${payment},00`
+        break
 
         case "Sênior":
-        payment = payment * 4
-        document.getElementById("resultadoPayment").innerHTML = `Seu cargo é ${role}. O salário correspondente é de R$${payment},00`
+            payment = payment * 4
+            document.getElementById("resultadoPayment").innerHTML = `Seu cargo é ${role}. O salário correspondente é de R$${payment},00`
+        break
 
         case "TechLead":
-        payment = payment * 8
-        document.getElementById("resultadoPayment").innerHTML = `Seu cargo é ${role}. O salário correspondente é de R$${payment},00`
+            payment = payment * 8
+            document.getElementById("resultadoPayment").innerHTML = `Seu cargo é ${role}. O salário correspondente é de R$${payment},00`
+        break
 
         case "Diretor":
-        payment = payment * 16
-        document.getElementById("resultadoPayment").innerHTML = `Seu cargo é ${role}. O salário correspondente é de R$${payment},00`
+            payment = payment * 16
+            document.getElementById("resultadoPayment").innerHTML = `Seu cargo é ${role}. O salário correspondente é de R$${payment},00`
+        break
+
+        default:
+            document.getElementById("resultadoPayment").innerHTML = `Escolha um cargo válido`
+
     }
 }
