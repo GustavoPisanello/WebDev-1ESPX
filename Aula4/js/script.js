@@ -3,7 +3,9 @@ let resultPlaceholder = document.getElementById("resultPlaceholder")
 function Tabuada(){
     let results = []
     let num = prompt("Digite um número para fazer a tabuada: ")
-    let result
+    let result    
+    num = num.replace(",", ".")
+
     for (i = 1; i<=10; i++){
         result = num * i;
         results.push(`| ${num} * ${i} = ${result} <br>`)
