@@ -1,0 +1,15 @@
+#result{
+    font-family: monospace;
+}
+
+.verde{
+    color: green;
+}
+
+.vermelho{
+    color: red;
+}
+
+.cinza{
+    color: rgb(65, 65, 65);
+}
